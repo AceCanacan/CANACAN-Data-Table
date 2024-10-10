@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import "./App.css";
-import FilterProductTable from "./components/FilterProductTable";
-import ProductTable from "./components/ProductTable";
+import FilterStudentTable from "./components/FilterStudentTable";
+import StudentTable from "./components/StudentTable";
 import SearchBar from "./components/SearchBar";
 import { Container, Card } from "react-bootstrap";
 
@@ -37,7 +37,7 @@ function App() {
   return (
     <Container className="mt-4">
       <Card className="p-4 shadow-sm" style={{ backgroundColor: "#ffffff" }}>
-        <FilterProductTable>
+        <FilterStudentTable>
           <SearchBar
             firstName={firstName}
             setFirstName={setFirstName}
@@ -54,7 +54,7 @@ function App() {
             endDate={endDate}
             setEndDate={setEndDate}
           />
-          <ProductTable
+          <StudentTable
             headers={headers}
             data={data}
             firstName={firstName}
@@ -65,7 +65,7 @@ function App() {
             startDate={startDate}
             endDate={endDate}
           />
-        </FilterProductTable>
+        </FilterStudentTable>
       </Card>
     </Container>
   );

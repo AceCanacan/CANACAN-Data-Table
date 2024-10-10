@@ -3,7 +3,7 @@
 import React from "react";
 import Table from "../Table";
 
-const ProductItem = ({ value }) => {
+const StudentItem = ({ value }) => {
   return (
     <Table.Row style={{ backgroundColor: "#f9f9f9" }}>
       <Table.Column>{value.lastName}</Table.Column>
@@ -15,4 +15,4 @@ const ProductItem = ({ value }) => {
   );
 };
 
-export default ProductItem;
+export default StudentItem;

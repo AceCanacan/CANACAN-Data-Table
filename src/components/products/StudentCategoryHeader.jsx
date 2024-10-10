@@ -3,7 +3,7 @@
 import React from "react";
 import Table from "../Table";
 
-const ProductCategoryHeader = ({ text }) => {
+const StudentCategoryHeader = ({ text }) => {
   return (
     <Table.Row>
       <Table.ColumnHeader
@@ -21,4 +21,4 @@ const ProductCategoryHeader = ({ text }) => {
   );
 };
 
-export default ProductCategoryHeader;
+export default StudentCategoryHeader;
